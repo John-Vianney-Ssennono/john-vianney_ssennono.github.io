@@ -7,116 +7,122 @@
    1. DESIGN TOKENS & CSS VARIABLES (LIGHT & DARK MODES)
    --------------------------------------------------------------------------------------------- */
 :root {
-    /* Brand Accent Colors (Navy Blue & Cognac Brown) */
-    --brand-navy-deep: #0a192f;
-    --brand-navy-main: #132e58;
-    --brand-navy-vibrant: #1d4ed8;
-    --brand-navy-light: #3b82f6;
-    --brand-navy-soft: #93c5fd;
+    /* Brand Accent Colors: Navy Blue Palette */
+    --brand-navy-deep: #0a192f;       /* Deepest Oxford Midnight Navy: used for high-contrast headers and dark card depths */
+    --brand-navy-main: #132e58;       /* Primary Navy Blue: signature corporate anchor tone for headers and button gradients */
+    --brand-navy-vibrant: #1d4ed8;    /* Radiant Royal Navy: high-energy interactive state for hover glows and active links */
+    --brand-navy-light: #3b82f6;      /* Electric Sky Blue: used for focus rings, telemetry readouts, and circuit indicators */
+    --brand-navy-soft: #93c5fd;       /* Soft Ice Blue: delicate specular highlights on glass edges and subtle badges */
 
-    --brand-brown-deep: #451a03;
-    --brand-brown-main: #78350f;
-    --brand-brown-cognac: #92400e;
-    --brand-brown-amber: #d97706;
-    --brand-brown-gold: #f59e0b;
-    --brand-brown-soft: #fde68a;
+    /* Brand Accent Colors: Cognac & Amber Brown Palette */
+    --brand-brown-deep: #451a03;      /* Dark Espresso Umber: deep warm shadow tone beneath luxury cards */
+    --brand-brown-main: #78350f;      /* Classic Saddle Brown: primary grounding tone for quotes and hardware callouts */
+    --brand-brown-cognac: #92400e;    /* Rich Cognac Amber: signature warm accent providing vibrant contrast against navy */
+    --brand-brown-amber: #d97706;     /* Radiant Amber Gold: active state for simulation meters, sliders, and badges */
+    --brand-brown-gold: #f59e0b;      /* Warm Sunlight Gold: specular highlights, rating stars, and key metrics */
+    --brand-brown-soft: #fde68a;      /* Soft Vanilla Amber: subtle translucent tinting for badge surfaces */
 
-    --status-emerald: #10b981;
-    --status-red: #ef4444;
+    /* System Status Alerts */
+    --status-emerald: #10b981;        /* Crisp Emerald Green: indicates safe distance clearance and available office state */
+    --status-red: #ef4444;            /* Warning Coral Red: indicates obstacle proximity (<15cm) and busy office meetings */
 
-    /* Base Font Stacks */
-    --font-system: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    --font-mono: "JetBrains Mono", "SF Mono", Menlo, Monaco, Consolas, monospace;
+    /* Typography Font Stacks */
+    --font-system: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* Apple Native SF Pro Display / Inter */
+    --font-mono: "JetBrains Mono", "SF Mono", Menlo, Monaco, Consolas, monospace; /* Monospaced tabular numerals and C firmware code */
 
-    /* Transitions & Smooth Physics */
-    --ease-apple: cubic-bezier(0.16, 1, 0.3, 1);
-    --transition-fast: 0.2s var(--ease-apple);
-    --transition-mid: 0.35s var(--ease-apple);
-    --transition-slow: 0.6s var(--ease-apple);
+    /* Apple Spring Motion & Transition Curves */
+    --ease-apple: cubic-bezier(0.16, 1, 0.3, 1); /* Authentic VisionOS cubic bezier curve creating natural deceleration */
+    --transition-fast: 0.2s var(--ease-apple);    /* Fast 200ms transition for tactile buttons and hover feedback */
+    --transition-mid: 0.35s var(--ease-apple);    /* Medium 350ms transition for drawer expansion and modal popups */
+    --transition-slow: 0.6s var(--ease-apple);   /* Slow 600ms transition for ambient orb drifting and theme fading */
 }
 
-/* ----------------- DARK THEME (DEFAULT) ----------------- */
+/* ---------------------------------------------------------------------------------------------
+   DARK VISION THEME (DEFAULT) — DEEP MIDNIGHT NAVY & COGNAC GLOW
+   --------------------------------------------------------------------------------------------- */
 [data-theme="dark"] {
-    --bg-page: #060b14;
-    --bg-page-alt: #0b1424;
+    --bg-page: #060b14;                           /* Deepest midnight navy backdrop preventing eye strain in dim environments */
+    --bg-page-alt: #0b1424;                       /* Secondary navy backdrop for elevated sections and timeline cards */
     
-    /* Text Contrast: Ultra-clear, eye-soothing, high legibility */
-    --text-primary: #f8fafc;       /* 98% Bright crisp off-white */
-    --text-secondary: #cbd5e1;     /* Soft slate silver */
-    --text-muted: #94a3b8;         /* Subdued tertiary */
-    --text-dim: #64748b;
+    /* Text Hierarchy: High contrast, eye-soothing, glare-free readability */
+    --text-primary: #f8fafc;                      /* 98% Bright crisp off-white for effortless reading of headlines and body text */
+    --text-secondary: #cbd5e1;                    /* Soft slate silver for secondary descriptions, bullet points, and subheaders */
+    --text-muted: #94a3b8;                        /* Subdued tertiary slate for timestamps, dates, and subtle metadata */
+    --text-dim: #64748b;                          /* Dimmed caption slate for copyright notices and unobtrusive footnotes */
 
     /* Accent & Brand Usage in Dark Mode */
-    --navy-accent: #38bdf8;
-    --navy-surface: rgba(19, 46, 88, 0.35);
-    --brown-accent: #f59e0b;
-    --brown-surface: rgba(146, 64, 14, 0.3);
+    --navy-accent: #38bdf8;                       /* Luminous sky blue accent cutting sharply through dark navy glass */
+    --navy-surface: rgba(19, 46, 88, 0.35);       /* Translucent navy tint for status badges and pill containers */
+    --brown-accent: #f59e0b;                      /* Warm glowing amber-gold for author badges and obstacle metrics */
+    --brown-surface: rgba(146, 64, 14, 0.3);      /* Translucent cognac amber tint for award chips and highlights */
 
     /* Apple Vision Frosted Glass Panel Recipe */
-    --glass-bg: rgba(11, 20, 36, 0.65);
-    --glass-bg-hover: rgba(17, 30, 54, 0.75);
-    --glass-border: rgba(255, 255, 255, 0.12);
-    --glass-border-hover: rgba(255, 255, 255, 0.24);
-    --glass-blur: blur(30px) saturate(190%);
-    --glass-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.15);
-    --glass-shadow-hover: 0 35px 70px -15px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    --glass-bg: rgba(11, 20, 36, 0.65);           /* Semi-transparent dark navy sheet allowing ambient background orbs to filter through */
+    --glass-bg-hover: rgba(17, 30, 54, 0.75);     /* Slightly lighter navy opacity on mouse hover creating tactile depth */
+    --glass-border: rgba(255, 255, 255, 0.12);    /* Subtle white specular hairline border simulating physical glass edges */
+    --glass-border-hover: rgba(255, 255, 255, 0.24); /* Brighter specular rim reflection on hover */
+    --glass-blur: blur(30px) saturate(190%);      /* Authentic Apple Vision spatial blur with color saturation boost */
+    --glass-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.15); /* Multi-layer ambient drop shadow + specular rim */
+    --glass-shadow-hover: 0 35px 70px -15px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.25); /* Lifted shadow on hover */
 
     /* Card Surfaces & Inner Elements */
-    --inner-card-bg: rgba(255, 255, 255, 0.04);
-    --inner-card-border: rgba(255, 255, 255, 0.08);
-    --code-bg: rgba(3, 7, 18, 0.75);
-    --terminal-border: rgba(255, 255, 255, 0.1);
+    --inner-card-bg: rgba(255, 255, 255, 0.04);   /* Subtle translucent white tint for nested tiles inside glass panels */
+    --inner-card-border: rgba(255, 255, 255, 0.08); /* Hairline divider border for internal card modules */
+    --code-bg: rgba(3, 7, 18, 0.75);              /* Deep terminal backdrop for C microcontroller code previews */
+    --terminal-border: rgba(255, 255, 255, 0.1);  /* Clean border enclosing simulated firmware terminal */
 
     /* Ambient Lighting Orbs */
-    --orb-navy: rgba(29, 78, 216, 0.22);
-    --orb-brown: rgba(180, 83, 9, 0.20);
-    --orb-blend: overlay;
+    --orb-navy: rgba(29, 78, 216, 0.22);          /* Translucent royal navy glow orb in background */
+    --orb-brown: rgba(180, 83, 9, 0.20);          /* Translucent warm cognac glow orb in background */
+    --orb-blend: overlay;                         /* CSS mix blend mode blending glowing light into dark canvas */
 
-    /* Theme Switcher Colors */
-    --btn-toggle-bg: rgba(255, 255, 255, 0.08);
-    --btn-toggle-border: rgba(255, 255, 255, 0.15);
+    /* Theme Switcher Button Colors */
+    --btn-toggle-bg: rgba(255, 255, 255, 0.08);   /* Translucent glass background for theme pill */
+    --btn-toggle-border: rgba(255, 255, 255, 0.15); /* Specular hairline border enclosing theme toggle */
 }
 
-/* ----------------- LIGHT THEME ----------------- */
+/* ---------------------------------------------------------------------------------------------
+   LIGHT VISION THEME — WARM ALABASTER PORCELAIN & CRISP OXFORD NAVY
+   --------------------------------------------------------------------------------------------- */
 [data-theme="light"] {
-    --bg-page: #f6f7fa;
-    --bg-page-alt: #edf1f7;
+    --bg-page: #f6f7fa;                           /* Crisp, clean, warm porcelain alabaster background */
+    --bg-page-alt: #edf1f7;                       /* Soft warm grey-navy secondary section background */
 
-    /* Text Contrast: Deep rich Oxford navy for ultimate crisp readability */
-    --text-primary: #0a192f;       /* Deep Oxford Navy (WCAG AAA readability) */
-    --text-secondary: #1e293b;     /* Crisp dark slate */
-    --text-muted: #475569;         /* Slate label grey */
-    --text-dim: #64748b;
+    /* Text Hierarchy: Deep Oxford Navy ensuring WCAG AAA legibility */
+    --text-primary: #0a192f;                      /* Deep Oxford Navy: maximum contrast and clarity on light glass */
+    --text-secondary: #1e293b;                    /* Crisp dark slate for secondary body descriptions and bullet points */
+    --text-muted: #475569;                        /* Medium slate label grey for dates, metadata, and tags */
+    --text-dim: #64748b;                          /* Muted slate for captions and copyright text */
 
     /* Accent & Brand Usage in Light Mode */
-    --navy-accent: #1d4ed8;
-    --navy-surface: rgba(219, 234, 254, 0.75);
-    --brown-accent: #92400e;
-    --brown-surface: rgba(254, 243, 199, 0.75);
+    --navy-accent: #1d4ed8;                       /* Vibrant Oxford royal navy for interactive elements and active links */
+    --navy-surface: rgba(219, 234, 254, 0.75);    /* Soft powder blue-navy surface for badges */
+    --brown-accent: #92400e;                      /* Deep rich cognac amber-brown for high readability on white glass */
+    --brown-surface: rgba(254, 243, 199, 0.75);   /* Warm ivory-amber surface for tags and highlights */
 
     /* Apple Vision Frosted Glass Panel Recipe in Light */
-    --glass-bg: rgba(255, 255, 255, 0.78);
-    --glass-bg-hover: rgba(255, 255, 255, 0.92);
-    --glass-border: rgba(255, 255, 255, 0.95);
-    --glass-border-hover: rgba(255, 255, 255, 1);
-    --glass-blur: blur(30px) saturate(180%);
-    --glass-shadow: 0 20px 45px -15px rgba(10, 25, 47, 0.09), 0 2px 8px rgba(10, 25, 47, 0.04), inset 0 1px 0 rgba(255, 255, 255, 1);
-    --glass-shadow-hover: 0 30px 60px -15px rgba(10, 25, 47, 0.16), 0 4px 12px rgba(10, 25, 47, 0.06), inset 0 1px 0 rgba(255, 255, 255, 1);
+    --glass-bg: rgba(255, 255, 255, 0.78);        /* Milky white translucent frosted glass panel */
+    --glass-bg-hover: rgba(255, 255, 255, 0.92);  /* Brighter white glass surface upon hovering */
+    --glass-border: rgba(255, 255, 255, 0.95);    /* Specular white top bevel rim reflection */
+    --glass-border-hover: rgba(255, 255, 255, 1); /* Solid crisp white rim reflection on hover */
+    --glass-blur: blur(30px) saturate(180%);      /* Glassmorphism blur filter */
+    --glass-shadow: 0 20px 45px -15px rgba(10, 25, 47, 0.09), 0 2px 8px rgba(10, 25, 47, 0.04), inset 0 1px 0 rgba(255, 255, 255, 1); /* Soft spatial shadow */
+    --glass-shadow-hover: 0 30px 60px -15px rgba(10, 25, 47, 0.16), 0 4px 12px rgba(10, 25, 47, 0.06), inset 0 1px 0 rgba(255, 255, 255, 1); /* Hover elevation shadow */
 
     /* Card Surfaces & Inner Elements */
-    --inner-card-bg: rgba(255, 255, 255, 0.65);
-    --inner-card-border: rgba(15, 23, 42, 0.07);
-    --code-bg: #0f172a;
-    --terminal-border: rgba(15, 23, 42, 0.1);
+    --inner-card-bg: rgba(255, 255, 255, 0.65);   /* Pure frosted white inner tile container */
+    --inner-card-border: rgba(15, 23, 42, 0.07);  /* Delicate graphite hairline border */
+    --code-bg: #0f172a;                           /* High-contrast midnight terminal for code snippets */
+    --terminal-border: rgba(15, 23, 42, 0.1);     /* Border around code box */
 
     /* Ambient Lighting Orbs */
-    --orb-navy: rgba(191, 219, 254, 0.65);
-    --orb-brown: rgba(254, 215, 170, 0.55);
-    --orb-blend: multiply;
+    --orb-navy: rgba(191, 219, 254, 0.65);        /* Soft sky blue pastel orb */
+    --orb-brown: rgba(254, 215, 170, 0.55);       /* Soft warm peach-amber pastel orb */
+    --orb-blend: multiply;                        /* Light mode blending */
 
-    /* Theme Switcher Colors */
-    --btn-toggle-bg: rgba(15, 23, 42, 0.06);
-    --btn-toggle-border: rgba(15, 23, 42, 0.1);
+    /* Theme Switcher Button Colors */
+    --btn-toggle-bg: rgba(15, 23, 42, 0.06);      /* Subtle graphite tint for button */
+    --btn-toggle-border: rgba(15, 23, 42, 0.1);   /* Border for button */
 }
 
 /* ---------------------------------------------------------------------------------------------

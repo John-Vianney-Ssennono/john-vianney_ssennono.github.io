@@ -1,145 +1,229 @@
 <!DOCTYPE html>
+<!-- Specifies the HTML5 standard document type definition for universal modern browser compatibility -->
 <html lang="en" data-theme="dark">
+<!-- Root element of the web document with English language and default Dark Vision theme -->
+
 <head>
+    <!-- Document head containing metadata, character sets, external stylesheets, and webfonts -->
     <meta charset="UTF-8">
+    <!-- UTF-8 character encoding supporting standard symbols, accents, and unicode characters -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Viewport configuration ensuring crisp, edge-to-edge scaling on iPhone, Android, tablet, and desktop -->
     <title>John Vianney Ssennono — Electrical & Embedded Systems Engineer</title>
+    <!-- The primary browser tab title and search engine headline for John's portfolio -->
     
-    <!-- SEO & Metadata -->
+    <!-- ========================================================================================= -->
+    <!-- SEARCH ENGINE OPTIMIZATION (SEO) & METADATA -->
+    <!-- ========================================================================================= -->
     <meta name="description" content="Portfolio of John Vianney Ssennono, Electrical Engineering student at the University of Oklahoma (3.7 GPA). Embedded hardware prototyping, EV power optimization researcher, and systems engineer.">
+    <!-- Search engine description summarizing academic background, research, and technical specialties -->
     <meta name="keywords" content="John Vianney Ssennono, Electrical Engineering, Embedded Systems, C Programming, University of Oklahoma, Arduino, Power Optimization, Electric Vehicles, Machine Learning, Sooner Rover">
+    <!-- Keywords aiding discovery for electrical engineering, microcontroller programming, and EV research -->
     <meta name="author" content="John Vianney Ssennono">
+    <!-- Author attribution identifying the creator of this engineering portfolio -->
 
-    <!-- Open Graph -->
+    <!-- ========================================================================================= -->
+    <!-- OPEN GRAPH SOCIAL SHARING CARDS (LINKEDIN, X, MESSAGING APPS) -->
+    <!-- ========================================================================================= -->
     <meta property="og:title" content="John Vianney Ssennono — Electrical & Embedded Systems Engineer">
+    <!-- Social card headline displayed when sharing website links on LinkedIn or messaging apps -->
     <meta property="og:description" content="Embedded hardware prototyping, EV power optimization research, and intelligent systems. University of Oklahoma EE (3.7 GPA).">
+    <!-- Short descriptive preview snippet rendered beneath the headline in social previews -->
     <meta property="og:type" content="website">
+    <!-- OpenGraph entity classification declaring this page as a web application / personal site -->
     <meta property="og:url" content="https://john-vianney-ssennono.github.io/">
+    <!-- Canonical public URL where the live GitHub Pages website is hosted -->
 
-    <!-- Favicon (Apple Glass Monogram) -->
+    <!-- ========================================================================================= -->
+    <!-- BRAND ICONS & TYPOGRAPHY -->
+    <!-- ========================================================================================= -->
+    <!-- Custom Apple Vision Frosted Glass Monogram Favicon (SVG format for infinite crispness) -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-    <!-- Fonts: Apple SF Pro Display / Inter & JetBrains Mono for Code -->
+    <!-- Preconnect to Google Fonts servers to speed up typography asset loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconnect to Google Fonts cross-origin CDN for cryptographic handshake optimization -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- SF Pro Display fallback webfonts: Inter (body/headings) and JetBrains Mono (hardware C code) -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome Vector Icons CDN: Provides clean glyphs for microcontrollers, chips, servers, and contacts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Main Stylesheet (Vanilla CSS, Apple Vision Glass, Navy & Brown Theme) -->
+    <!-- Main Stylesheet: Contains the Vanilla CSS design system, Apple Vision glass tokens, and Brown/Navy theme -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Background Ambient Glow Orbs -->
+    <!-- ========================================================================================= -->
+    <!-- AMBIENT SPATIAL LIGHTING CANVAS (APPLE VISION AESTHETIC) -->
+    <!-- ========================================================================================= -->
+    <!-- Fixed background layer holding soft radial glowing orbs (hidden from screen reader accessibility trees) -->
     <div class="ambient-canvas" aria-hidden="true">
+        <!-- Floating navy blue ambient glow orb situated near top left -->
         <div class="ambient-orb orb-navy-1"></div>
+        <!-- Floating warm cognac brown ambient glow orb situated near top right -->
         <div class="ambient-orb orb-brown-1"></div>
+        <!-- Deep ocean navy blue glow orb floating near bottom right -->
         <div class="ambient-orb orb-navy-2"></div>
+        <!-- Warm amber-brown glow orb floating near bottom left for visual warmth -->
         <div class="ambient-orb orb-brown-2"></div>
     </div>
 
-    <!-- Navigation Bar (Floating Glass Capsule) -->
+    <!-- ========================================================================================= -->
+    <!-- FLOATING APPLE VISION GLASS NAVIGATION HEADER -->
+    <!-- ========================================================================================= -->
+    <!-- Sticky header container pinned to the top of the viewport with top padding -->
     <header class="header-container" id="top">
+        <!-- Frosted glass capsule navigation container with backdrop blur and specular white rim -->
         <nav class="nav-glass" aria-label="Main Navigation">
+            <!-- Brand logo link clicking to scroll smoothly back to top of the webpage -->
             <a href="#top" class="brand-link" aria-label="John Vianney Ssennono Home">
+                <!-- Initials monogram icon badge styled with a navy blue to cognac brown linear gradient -->
                 <span class="brand-monogram">JS</span>
+                <!-- Text container holding John's first name, last name, and engineering discipline -->
                 <span class="brand-name">
+                    <!-- Bold primary headline text -->
                     <strong>John Vianney</strong>
+                    <!-- Subtitle indicating primary field of study and technical identity -->
                     <span class="brand-sub">Electrical Engineering</span>
                 </span>
             </a>
 
+            <!-- Desktop Navigation Links Capsule -->
             <div class="nav-links" id="navLinks">
+                <!-- Smooth scroll navigation anchor to the About & Narrative section -->
                 <a href="#about" class="nav-link">About</a>
+                <!-- Smooth scroll navigation anchor to the EV Power Machine Learning Research section -->
                 <a href="#research" class="nav-link">Research</a>
+                <!-- Smooth scroll navigation anchor to the Hardware & Circuit Prototypes section -->
                 <a href="#projects" class="nav-link">Projects</a>
+                <!-- Smooth scroll navigation anchor to the Professional Experience & Leadership timeline -->
                 <a href="#experience" class="nav-link">Experience</a>
+                <!-- Smooth scroll navigation anchor to the Engineering Skills & Laboratory Tools matrix -->
                 <a href="#skills" class="nav-link">Skills</a>
+                <!-- Smooth scroll navigation anchor to the Direct Contact & Message Dispatch form -->
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
 
+            <!-- Action buttons container (Theme switcher, Resume modal opener, Mobile hamburger) -->
             <div class="nav-actions">
-                <!-- Theme Switcher (Dark / Light) -->
+                <!-- Tactile Apple-style theme toggle button switching between Dark and Light color palettes -->
                 <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Dark and Light Mode" title="Toggle Theme (Dark / Light)">
+                    <!-- Crescent moon vector icon displayed during dark mode -->
                     <i class="fa-solid fa-moon icon-dark"></i>
+                    <!-- Radiant sun vector icon displayed during light mode -->
                     <i class="fa-solid fa-sun icon-light"></i>
+                    <!-- Dynamic label text indicating current active theme ('Dark' or 'Light') -->
                     <span class="theme-label" id="themeLabelText">Dark</span>
                 </button>
 
-                <!-- Quick Resume Button -->
+                <!-- Action button that opens the interactive Apple Vision resume modal sheet -->
                 <a href="#resume-modal" id="openResumeBtn" class="btn-pill btn-pill-primary">
+                    <!-- Paper document vector icon -->
                     <i class="fa-solid fa-file-lines"></i>
+                    <!-- Button text label -->
                     <span>Resume</span>
                 </a>
 
-                <!-- Mobile Menu Hamburger -->
+                <!-- Mobile menu toggle button (visible exclusively on smartphone and small tablet screens) -->
                 <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <!-- Hamburger three-bar icon -->
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
         </nav>
     </header>
 
-    <!-- Mobile Drawer Navigation -->
+    <!-- ========================================================================================= -->
+    <!-- MOBILE DRAWER NAVIGATION MENU (FOR SMARTPHONES & SMALL TABLETS) -->
+    <!-- ========================================================================================= -->
+    <!-- Floating drawer panel that slides open when mobile hamburger button is tapped -->
     <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+        <!-- Vertical stack of navigation links -->
         <div class="drawer-links">
+            <!-- Mobile link to About section with astronaut user icon -->
             <a href="#about" class="drawer-link"><i class="fa-solid fa-user-astronaut"></i> About</a>
+            <!-- Mobile link to Research section with microscope icon -->
             <a href="#research" class="drawer-link"><i class="fa-solid fa-microscope"></i> Research</a>
+            <!-- Mobile link to Projects section with microchip circuit icon -->
             <a href="#projects" class="drawer-link"><i class="fa-solid fa-microchip"></i> Projects</a>
+            <!-- Mobile link to Experience section with briefcase professional icon -->
             <a href="#experience" class="drawer-link"><i class="fa-solid fa-briefcase"></i> Experience</a>
+            <!-- Mobile link to Skills section with hardware sliders icon -->
             <a href="#skills" class="drawer-link"><i class="fa-solid fa-sliders"></i> Skills</a>
+            <!-- Mobile link to Contact section with envelope mail icon -->
             <a href="#contact" class="drawer-link"><i class="fa-solid fa-envelope"></i> Contact</a>
         </div>
     </div>
 
+    <!-- ========================================================================================= -->
+    <!-- MAIN CONTENT AREA -->
+    <!-- ========================================================================================= -->
     <main id="main-content">
-        <!-- Hero Section -->
+        <!-- ===================================================================================== -->
+        <!-- SECTION 1: HERO SPOTLIGHT & LIVE TELEMETRY PREVIEW -->
+        <!-- ===================================================================================== -->
         <section class="section hero-section">
+            <!-- Two-column responsive container grid -->
             <div class="container hero-grid">
+                <!-- Column 1: Introduction, Mission Statement, Action Buttons, and Metrics -->
                 <div class="hero-text-col">
+                    <!-- Status indicator capsule displaying academic standing and GPA -->
                     <div class="status-badge">
+                        <!-- Pulsing green status beacon representing active undergraduate enrollment -->
                         <span class="status-dot"></span>
+                        <!-- Informational text highlighting university, degree, and top academic GPA -->
                         <span class="status-text">University of Oklahoma · B.S. Electrical Engineering · 3.7 GPA</span>
                     </div>
 
+                    <!-- Main hero headline with gradient text emphasis -->
                     <h1 class="hero-title">
                         Building intelligent hardware from <span class="gradient-text-navy">schematic</span> to <span class="gradient-text-brown">execution</span>.
                     </h1>
 
+                    <!-- Personal mission statement from John's bio explaining technical breadth -->
                     <p class="hero-description">
                         I am an Electrical Engineering student working at the intersection of embedded hardware prototyping, power optimization, and intelligent systems. From low-latency C programming on microcontrollers to data-driven energy reviews of electric vehicles, I build resilient systems that bridge theory with physical reality.
                     </p>
 
+                    <!-- Hero Call to Action Buttons Row -->
                     <div class="hero-actions">
+                        <!-- Primary CTA pill: scrolls to hardware prototypes with warm cognac accent button -->
                         <a href="#projects" class="btn-pill btn-pill-accent">
                             <i class="fa-solid fa-microchip"></i>
                             <span>Explore Hardware</span>
                         </a>
+                        <!-- Secondary CTA pill: scrolls to EV research spotlight with frosted outline button -->
                         <a href="#research" class="btn-pill btn-pill-outline">
                             <i class="fa-solid fa-bolt"></i>
                             <span>EV Research Spotlight</span>
                         </a>
+                        <!-- Tertiary CTA pill: scrolls to direct contact section -->
                         <a href="#contact" class="btn-pill btn-pill-ghost">
                             <i class="fa-solid fa-paper-plane"></i>
                             <span>Get in Touch</span>
                         </a>
                     </div>
 
-                    <!-- Metrics Ticker -->
+                    <!-- Hero Metrics Ticker: 4 key quantitative achievements -->
                     <div class="hero-metrics">
+                        <!-- Metric 1: Academic Standing -->
                         <div class="metric-card">
                             <span class="metric-num">3.7</span>
                             <span class="metric-label">GPA · Honors Society</span>
                         </div>
+                        <!-- Metric 2: Research Literature Scale -->
                         <div class="metric-card">
                             <span class="metric-num">600+</span>
                             <span class="metric-label">EV Studies Synthesized</span>
                         </div>
+                        <!-- Metric 3: Enterprise Cloud Operations -->
                         <div class="metric-card">
                             <span class="metric-num">100k+</span>
                             <span class="metric-label">Accounts Supported</span>
                         </div>
+                        <!-- Metric 4: Embedded Feedback Latency -->
                         <div class="metric-card">
                             <span class="metric-num">&lt;15ms</span>
                             <span class="metric-label">Embedded Logic Feedback</span>
@@ -147,21 +231,27 @@
                     </div>
                 </div>
 
-                <!-- Interactive Hardware Concept Card (Vision Glass) -->
+                <!-- Column 2: Interactive Hardware Telemetry Concept Card (Apple Vision Glass) -->
                 <div class="hero-visual-col">
+                    <!-- Frosted glass card representing live microcontroller telemetry -->
                     <div class="apple-glass-card hero-preview-card">
+                        <!-- Simulated Apple macOS / VisionOS window title bar -->
                         <div class="card-header-bar">
+                            <!-- Mac-style traffic light window control dots (red, yellow, green) -->
                             <div class="window-dots">
                                 <span class="w-dot red"></span>
                                 <span class="w-dot yellow"></span>
                                 <span class="w-dot green"></span>
                             </div>
+                            <!-- Title bar showing file name of embedded sensor driver -->
                             <span class="card-title-pill">
                                 <i class="fa-solid fa-terminal"></i> system_telemetry.c
                             </span>
+                            <!-- Live status indicator badge -->
                             <span class="card-chip">LIVE</span>
                         </div>
 
+                        <!-- Embedded C code terminal container -->
                         <div class="code-preview-terminal">
 <pre><code><span class="c-dim">// Real-Time Hardware Sensor Daemon</span>
 <span class="c-keyword">#include</span> <span class="c-str">&lt;avr/io.h&gt;</span>
@@ -180,23 +270,26 @@
 };</code></pre>
                         </div>
 
-                        <!-- Live Visual Circuit Indicator -->
+                        <!-- Circuit parameters and electrical indicators panel -->
                         <div class="circuit-indicator-box">
+                            <!-- Row 1: Microcontroller core architecture -->
                             <div class="indicator-row">
                                 <span class="indicator-label"><i class="fa-solid fa-microchip"></i> Microcontroller Core</span>
                                 <span class="indicator-val text-navy">ATmega328P / 16MHz</span>
                             </div>
+                            <!-- Row 2: Regulated power rail voltage -->
                             <div class="indicator-row">
                                 <span class="indicator-label"><i class="fa-solid fa-bolt"></i> Power Optimization</span>
                                 <span class="indicator-val text-brown">5.0V Regulated Rail</span>
                             </div>
+                            <!-- Row 3: Ultrasonic transducer frequency -->
                             <div class="indicator-row">
                                 <span class="indicator-label"><i class="fa-solid fa-wave-square"></i> Sensor Loop Frequency</span>
                                 <span class="indicator-val text-emerald">40 kHz Ultrasonic Echo</span>
                             </div>
                         </div>
 
-                        <!-- Mini Status Footer -->
+                        <!-- Card footer showing laboratory bench verification -->
                         <div class="card-status-footer">
                             <div class="status-left">
                                 <i class="fa-solid fa-shield-halved text-brown"></i>
@@ -209,9 +302,12 @@
             </div>
         </section>
 
-        <!-- About & Narrative Section -->
+        <!-- ===================================================================================== -->
+        <!-- SECTION 2: ACADEMIC PROFILE & ENGINEERING PILLARS -->
+        <!-- ===================================================================================== -->
         <section id="about" class="section about-section">
             <div class="container">
+                <!-- Section Header -->
                 <div class="section-header">
                     <span class="section-eyebrow">Academic & Professional Profile</span>
                     <h2 class="section-title">Bridging rigorous research with hands-on systems.</h2>
@@ -220,24 +316,31 @@
                     </p>
                 </div>
 
+                <!-- Two-column grid: Biography text + 3 Engineering pillars -->
                 <div class="about-grid">
+                    <!-- Left: Personal narrative glass card -->
                     <div class="about-bio-card apple-glass-card">
+                        <!-- Emphasized quote block -->
                         <div class="bio-lead">
                             <i class="fa-solid fa-quote-left quote-icon"></i>
                             <p>
                                 I am an Electrical Engineering student at the <strong>University of Oklahoma (3.7 GPA)</strong> working at the intersection of embedded hardware prototyping, power optimization, and intelligent systems.
                             </p>
                         </div>
+                        <!-- Narrative paragraph 1: Technical foundation -->
                         <p class="bio-text">
                             My technical background bridges rigorous academic research with hands-on systems execution—ranging from low-latency C programming on microcontrollers to data-driven energy analysis and enterprise-scale IT operations.
                         </p>
+                        <!-- Narrative paragraph 2: Research and physical prototypes -->
                         <p class="bio-text">
                             As the first author of a systematic review on machine learning applications in electric vehicle power efficiency, I synthesized data across <strong>600+ peer-reviewed studies</strong> to analyze energy optimization, battery performance, and grid resilience. On the physical implementation side, I take ideas from schematic to working hardware: designing wearable obstacle-detection systems using Arduino and embedded C, building real-time digital logic and sensor circuits, and validating hardware using lab instrumentation like oscilloscopes.
                         </p>
+                        <!-- Narrative paragraph 3: Multidisciplinary leadership -->
                         <p class="bio-text">
                             Outside the lab, I actively engage with multidisciplinary teams through the <strong>Jerry Holmes Leadership Program</strong>, <strong>IEEE</strong>, <strong>NSBE</strong>, and robotics initiatives like <strong>Sooner Rover</strong>. I am driven to build resilient, efficient electrical and embedded systems that solve real-world problems in power, mobility, and sustainable technology.
                         </p>
 
+                        <!-- Academic Credential Pills -->
                         <div class="about-tags">
                             <span class="tag"><i class="fa-solid fa-graduation-cap"></i> B.S. Electrical Engineering (Dec 2027)</span>
                             <span class="tag"><i class="fa-solid fa-building-columns"></i> University of Oklahoma</span>
@@ -247,8 +350,9 @@
                         </div>
                     </div>
 
+                    <!-- Right: Three Core Engineering Pillars -->
                     <div class="about-pillars-col">
-                        <!-- Pillar 1 -->
+                        <!-- Pillar 1: Embedded Prototyping -->
                         <div class="pillar-card apple-glass-card">
                             <div class="pillar-icon bg-navy-gradient">
                                 <i class="fa-solid fa-microchip"></i>
@@ -259,7 +363,7 @@
                             </div>
                         </div>
 
-                        <!-- Pillar 2 -->
+                        <!-- Pillar 2: Power & EV Optimization -->
                         <div class="pillar-card apple-glass-card">
                             <div class="pillar-icon bg-brown-gradient">
                                 <i class="fa-solid fa-charging-station"></i>
@@ -270,7 +374,7 @@
                             </div>
                         </div>
 
-                        <!-- Pillar 3 -->
+                        <!-- Pillar 3: Enterprise Systems & Operations -->
                         <div class="pillar-card apple-glass-card">
                             <div class="pillar-icon bg-navy-gradient">
                                 <i class="fa-solid fa-server"></i>
@@ -285,9 +389,12 @@
             </div>
         </section>
 
-        <!-- Research Spotlight Section (600+ EV Papers Systematic Review) -->
+        <!-- ===================================================================================== -->
+        <!-- SECTION 3: EV POWER EFFICIENCY MACHINE LEARNING RESEARCH SPOTLIGHT -->
+        <!-- ===================================================================================== -->
         <section id="research" class="section research-section">
             <div class="container">
+                <!-- Section Header -->
                 <div class="section-header">
                     <span class="section-eyebrow">Academic Research Spotlight</span>
                     <h2 class="section-title">Machine Learning in Electric Vehicle Power Efficiency</h2>
@@ -296,14 +403,18 @@
                     </p>
                 </div>
 
+                <!-- Showcase Glass Panel -->
                 <div class="research-showcase apple-glass-card">
+                    <!-- Badges row showing authorship status and journal review -->
                     <div class="research-badge-row">
                         <span class="pill-badge pill-brown"><i class="fa-solid fa-book-bookmark"></i> First Author</span>
                         <span class="pill-badge pill-navy"><i class="fa-solid fa-earth-americas"></i> 10+ Countries Reviewed</span>
                         <span class="pill-badge pill-emerald"><i class="fa-solid fa-file-circle-check"></i> Pending Publication · Frontiers in AI</span>
                     </div>
 
+                    <!-- Two-column research layout: Abstract & takeaways + Data visualization -->
                     <div class="research-grid">
+                        <!-- Column 1: Research Methodology and Findings -->
                         <div class="research-desc-col">
                             <h3 class="research-headline">
                                 Synthesizing 600+ Global Studies to Accelerate Next-Gen EV Energy Optimization
@@ -315,7 +426,9 @@
                                 Collaborated with an international team of researchers spanning four continents to construct a unified taxonomy of AI-driven power optimization—pinpointing critical gaps in real-time edge hardware deployment, thermal throttling, and vehicle-to-grid (V2G) integration.
                             </p>
 
+                            <!-- Key Research Takeaways List -->
                             <div class="research-takeaways">
+                                <!-- Takeaway 1: BMS -->
                                 <div class="takeaway-item">
                                     <div class="takeaway-dot"></div>
                                     <div>
@@ -323,6 +436,7 @@
                                         <span>LSTM and Transformer architectures improve State-of-Health (SoH) prediction accuracy up to 18% over conventional Coulomb-counting.</span>
                                     </div>
                                 </div>
+                                <!-- Takeaway 2: Regenerative Braking -->
                                 <div class="takeaway-item">
                                     <div class="takeaway-dot"></div>
                                     <div>
@@ -330,6 +444,7 @@
                                         <span>Deep Q-Networks (DQN) dynamically capture 12–15% more braking kinetic energy in urban stop-and-go drive cycles.</span>
                                     </div>
                                 </div>
+                                <!-- Takeaway 3: Hardware Bottlenecks -->
                                 <div class="takeaway-item">
                                     <div class="takeaway-dot"></div>
                                     <div>
@@ -340,7 +455,7 @@
                             </div>
                         </div>
 
-                        <!-- Interactive Research Data Explorer -->
+                        <!-- Column 2: Interactive Research Data Explorer -->
                         <div class="research-interactive-col">
                             <div class="interactive-glass-panel">
                                 <div class="panel-header">
@@ -348,7 +463,9 @@
                                     <span class="panel-tag">600+ Papers</span>
                                 </div>
 
+                                <!-- Domain percentage tracks -->
                                 <div class="domain-bars">
+                                    <!-- Domain 1: BMS (38%) -->
                                     <div class="domain-row" data-pct="38">
                                         <div class="domain-info">
                                             <span>Battery Health & SoC Prediction</span>
@@ -359,6 +476,7 @@
                                         </div>
                                     </div>
 
+                                    <!-- Domain 2: Powertrain (27%) -->
                                     <div class="domain-row" data-pct="27">
                                         <div class="domain-info">
                                             <span>Powertrain & Torque Vectoring</span>
@@ -369,6 +487,7 @@
                                         </div>
                                     </div>
 
+                                    <!-- Domain 3: Regenerative Braking (21%) -->
                                     <div class="domain-row" data-pct="21">
                                         <div class="domain-info">
                                             <span>Regenerative Braking Systems</span>
@@ -379,6 +498,7 @@
                                         </div>
                                     </div>
 
+                                    <!-- Domain 4: V2G (14%) -->
                                     <div class="domain-row" data-pct="14">
                                         <div class="domain-info">
                                             <span>Vehicle-to-Grid (V2G) Resilience</span>
@@ -390,6 +510,7 @@
                                     </div>
                                 </div>
 
+                                <!-- Formal Paper Citation Box -->
                                 <div class="citation-callout">
                                     <div class="callout-icon"><i class="fa-solid fa-quote-right"></i></div>
                                     <div class="callout-text">
@@ -404,9 +525,12 @@
             </div>
         </section>
 
-        <!-- Projects & Hardware Prototyping Section with Live Logic Simulation -->
+        <!-- ===================================================================================== -->
+        <!-- SECTION 4: HARDWARE PROTOTYPES & INTERACTIVE SIMULATORS -->
+        <!-- ===================================================================================== -->
         <section id="projects" class="section projects-section">
             <div class="container">
+                <!-- Section Header -->
                 <div class="section-header">
                     <span class="section-eyebrow">Hardware & Embedded Engineering</span>
                     <h2 class="section-title">Physical Prototypes & Intelligent Circuits</h2>
@@ -415,9 +539,11 @@
                     </p>
                 </div>
 
+                <!-- Projects Grid: 2 Side-by-Side Prototypes with Interactive Controls -->
                 <div class="projects-grid">
                     <!-- Project 1: Autonomous Obstacle-Detection Vision Glasses -->
                     <div class="project-card apple-glass-card" id="project-glasses">
+                        <!-- Header with classification badges -->
                         <div class="project-card-header">
                             <div class="project-badge-group">
                                 <span class="card-pill pill-navy">Wearable Hardware</span>
@@ -427,12 +553,14 @@
                             <span class="project-date">May 2026 – Present</span>
                         </div>
 
+                        <!-- Project Details Content -->
                         <div class="project-content">
                             <h3 class="project-title">Autonomous Obstacle-Detection Vision Glasses</h3>
                             <p class="project-description">
                                 Designed and prototyped a wearable embedded assistive system using an Arduino Uno microcontroller, integrating an ultrasonic distance sensor (HC-SR04) and a piezoelectric buzzer for real-time proximity feedback to aid visually impaired navigation.
                             </p>
 
+                            <!-- Bullet points detailing circuit and firmware design -->
                             <ul class="project-highlights">
                                 <li><strong>Low-Latency Embedded Logic:</strong> Authored interrupt-driven C control routines, validating reliable sub-15ms threshold detection at a 15 cm safe distance.</li>
                                 <li><strong>Hardware Power Optimization:</strong> Applied power supply decoupling and noise-filtering capacitors to maintain stable 5V rail integrity under acoustic pulsing.</li>
@@ -446,6 +574,7 @@
                                     <span class="sim-status" id="simStatusPill">Safe Clearance</span>
                                 </div>
 
+                                <!-- Slider control -->
                                 <div class="sim-controls">
                                     <label for="distanceSlider" class="sim-slider-label">
                                         <span>Proximity Distance: <strong id="distanceVal" class="text-brown">25 cm</strong></span>
@@ -454,6 +583,7 @@
                                     <input type="range" id="distanceSlider" min="2" max="60" value="25" step="1" class="apple-slider">
                                 </div>
 
+                                <!-- Telemetry meters readout -->
                                 <div class="sim-display-grid">
                                     <div class="sim-meter">
                                         <span class="meter-label">Trigger Logic</span>
@@ -469,6 +599,7 @@
                                     </div>
                                 </div>
 
+                                <!-- Microcontroller threshold logic in C -->
                                 <div class="sim-code-snippet">
                                     <code>
                                         <span class="c-keyword">if</span> (distance_cm &lt;= <span class="c-num">15</span>) { 
@@ -480,6 +611,7 @@
                                 </div>
                             </div>
 
+                            <!-- Hardware Technology Tags -->
                             <div class="project-tags">
                                 <span class="tag-sm">Arduino Uno</span>
                                 <span class="tag-sm">Embedded C</span>
@@ -493,6 +625,7 @@
 
                     <!-- Project 2: Door Reed Switch & LED Status Indicator System -->
                     <div class="project-card apple-glass-card" id="project-reed">
+                        <!-- Header with classification badges -->
                         <div class="project-card-header">
                             <div class="project-badge-group">
                                 <span class="card-pill pill-navy">Digital Logic</span>
@@ -502,25 +635,28 @@
                             <span class="project-date">Aug – Dec 2024</span>
                         </div>
 
+                        <!-- Project Details Content -->
                         <div class="project-content">
                             <h3 class="project-title">Door Reed Switch & LED Status Indicator System</h3>
                             <p class="project-description">
                                 Designed, fabricated, and delivered a real-time availability signaling circuit using magnetic reed switches and high-visibility color-coded LEDs to communicate live office occupancy across OU Engineering Pathways Offices.
                             </p>
 
+                            <!-- Bullet points detailing hardware build and testing -->
                             <ul class="project-highlights">
                                 <li><strong>Rapid Deployment:</strong> Delivered a fully tested, functional prototype within 1 month, reducing office walk-up interruption rates under 1 minute.</li>
                                 <li><strong>High-Visibility Optical Clarity:</strong> Tuned resistor ballast arrays to achieve crisp visual indication visible from 20+ feet down corridors.</li>
                                 <li><strong>Contact Debounce Circuitry:</strong> Integrated passive RC low-pass filter networks to suppress mechanical contact bounce and prevent spurious LED toggling.</li>
                             </ul>
 
-                            <!-- Interactive Switch Demo -->
+                            <!-- Interactive Switch Demo Box -->
                             <div class="interactive-simulator-box">
                                 <div class="sim-header">
                                     <span class="sim-title"><i class="fa-solid fa-door-open"></i> Circuit State Visualizer</span>
                                     <span class="sim-status sim-green" id="doorStatusPill">Office Open (Green LED)</span>
                                 </div>
 
+                                <!-- Toggle switch controls -->
                                 <div class="door-interactive-row">
                                     <button type="button" id="toggleDoorBtn" class="btn-pill btn-pill-outline btn-sm">
                                         <i class="fa-solid fa-toggle-on"></i> Toggle Door State
@@ -531,6 +667,7 @@
                                     </div>
                                 </div>
 
+                                <!-- Hardware specifications chips -->
                                 <div class="circuit-specs-row">
                                     <div class="spec-pill"><i class="fa-solid fa-eye"></i> 20-Foot Visible Range</div>
                                     <div class="spec-pill"><i class="fa-solid fa-stopwatch"></i> &lt;100ms Response</div>
@@ -538,6 +675,7 @@
                                 </div>
                             </div>
 
+                            <!-- Hardware Technology Tags -->
                             <div class="project-tags">
                                 <span class="tag-sm">Magnetic Reed Switches</span>
                                 <span class="tag-sm">Digital Logic Design</span>
@@ -551,9 +689,12 @@
             </div>
         </section>
 
-        <!-- Experience & Leadership Timeline -->
+        <!-- ===================================================================================== -->
+        <!-- SECTION 5: EXPERIENCE & LEADERSHIP TIMELINE -->
+        <!-- ===================================================================================== -->
         <section id="experience" class="section experience-section">
             <div class="container">
+                <!-- Section Header -->
                 <div class="section-header">
                     <span class="section-eyebrow">Professional History & Leadership</span>
                     <h2 class="section-title">Hands-On Experience & Operations</h2>
@@ -562,8 +703,9 @@
                     </p>
                 </div>
 
+                <!-- Chronological Experience Timeline -->
                 <div class="experience-timeline">
-                    <!-- Exp 1: OETT -->
+                    <!-- Experience 1: OETT Technology Assistant -->
                     <div class="timeline-item">
                         <div class="timeline-dot bg-navy-solid"></div>
                         <div class="timeline-card apple-glass-card">
@@ -589,7 +731,7 @@
                         </div>
                     </div>
 
-                    <!-- Exp 2: Research Study Assistant -->
+                    <!-- Experience 2: Research Study Assistant -->
                     <div class="timeline-item">
                         <div class="timeline-dot bg-brown-solid"></div>
                         <div class="timeline-card apple-glass-card">
@@ -614,7 +756,7 @@
                         </div>
                     </div>
 
-                    <!-- Exp 3: Undergraduate Researcher (Frontiers AI) -->
+                    <!-- Experience 3: Undergraduate Researcher (Frontiers AI) -->
                     <div class="timeline-item">
                         <div class="timeline-dot bg-navy-solid"></div>
                         <div class="timeline-card apple-glass-card">
@@ -639,7 +781,7 @@
                         </div>
                     </div>
 
-                    <!-- Exp 4: IT Service Delivery Specialist -->
+                    <!-- Experience 4: IT Service Delivery Specialist -->
                     <div class="timeline-item">
                         <div class="timeline-dot bg-brown-solid"></div>
                         <div class="timeline-card apple-glass-card">
@@ -673,6 +815,7 @@
                         <h3>Leadership, Societies & Extracurricular Activities</h3>
                     </div>
                     <div class="leadership-chips-grid">
+                        <!-- Activity 1 -->
                         <div class="l-chip">
                             <i class="fa-solid fa-compass"></i>
                             <div>
@@ -680,6 +823,7 @@
                                 <span>Engineering leadership & ethics development</span>
                             </div>
                         </div>
+                        <!-- Activity 2 -->
                         <div class="l-chip">
                             <i class="fa-solid fa-network-wired"></i>
                             <div>
@@ -687,6 +831,7 @@
                                 <span>Active Student Member</span>
                             </div>
                         </div>
+                        <!-- Activity 3 -->
                         <div class="l-chip">
                             <i class="fa-solid fa-users"></i>
                             <div>
@@ -694,6 +839,7 @@
                                 <span>Collegiate Chapter Member</span>
                             </div>
                         </div>
+                        <!-- Activity 4 -->
                         <div class="l-chip">
                             <i class="fa-solid fa-robot"></i>
                             <div>
@@ -701,6 +847,7 @@
                                 <span>Embedded hardware & robotics subsystem development</span>
                             </div>
                         </div>
+                        <!-- Activity 5 -->
                         <div class="l-chip">
                             <i class="fa-solid fa-atom"></i>
                             <div>
@@ -708,6 +855,7 @@
                                 <span>Next-gen computing & AI architectures</span>
                             </div>
                         </div>
+                        <!-- Activity 6 -->
                         <div class="l-chip">
                             <i class="fa-solid fa-star"></i>
                             <div>
@@ -715,6 +863,7 @@
                                 <span>Top academic standing (3.7 GPA)</span>
                             </div>
                         </div>
+                        <!-- Activity 7 -->
                         <div class="l-chip">
                             <i class="fa-solid fa-globe"></i>
                             <div>
@@ -727,9 +876,12 @@
             </div>
         </section>
 
-        <!-- Technical Skills & Engineering Arsenal -->
+        <!-- ===================================================================================== -->
+        <!-- SECTION 6: TECHNICAL SKILLS & ENGINEERING ARSENAL -->
+        <!-- ===================================================================================== -->
         <section id="skills" class="section skills-section">
             <div class="container">
+                <!-- Section Header -->
                 <div class="section-header">
                     <span class="section-eyebrow">Technical Skills & Arsenal</span>
                     <h2 class="section-title">Hardware, Software & Laboratory Mastery</h2>
@@ -738,8 +890,9 @@
                     </p>
                 </div>
 
+                <!-- 4 Categorized Skill Glass Panels -->
                 <div class="skills-grid">
-                    <!-- Category 1: Programming & Computing -->
+                    <!-- Category 1: Programming & Software -->
                     <div class="skill-category-card apple-glass-card">
                         <div class="category-header">
                             <div class="cat-icon bg-navy-gradient"><i class="fa-solid fa-code"></i></div>
@@ -760,7 +913,7 @@
                         </div>
                     </div>
 
-                    <!-- Category 2: Hardware & Lab Equipment -->
+                    <!-- Category 2: Hardware & Prototyping -->
                     <div class="skill-category-card apple-glass-card">
                         <div class="category-header">
                             <div class="cat-icon bg-brown-gradient"><i class="fa-solid fa-microchip"></i></div>
@@ -826,9 +979,12 @@
             </div>
         </section>
 
-        <!-- Interactive Contact Section -->
+        <!-- ===================================================================================== -->
+        <!-- SECTION 7: DIRECT CONTACT & MESSAGE DISPATCH -->
+        <!-- ===================================================================================== -->
         <section id="contact" class="section contact-section">
             <div class="container">
+                <!-- Section Header -->
                 <div class="section-header">
                     <span class="section-eyebrow">Let's Connect</span>
                     <h2 class="section-title">Get In Touch</h2>
@@ -837,10 +993,12 @@
                     </p>
                 </div>
 
+                <!-- Two-Column Contact Layout -->
                 <div class="contact-grid">
                     <!-- Left: Contact Details & Quick Copy Cards -->
                     <div class="contact-details-col">
                         <div class="contact-card apple-glass-card">
+                            <!-- Email row with 1-click copy button -->
                             <div class="c-info-row">
                                 <div class="c-icon bg-navy-gradient"><i class="fa-solid fa-envelope"></i></div>
                                 <div class="c-text">
@@ -852,6 +1010,7 @@
                                 </button>
                             </div>
 
+                            <!-- Phone row with 1-click copy button -->
                             <div class="c-info-row">
                                 <div class="c-icon bg-brown-gradient"><i class="fa-solid fa-phone"></i></div>
                                 <div class="c-text">
@@ -863,6 +1022,7 @@
                                 </button>
                             </div>
 
+                            <!-- Physical University Location -->
                             <div class="c-info-row">
                                 <div class="c-icon bg-navy-gradient"><i class="fa-solid fa-location-dot"></i></div>
                                 <div class="c-text">
@@ -871,6 +1031,7 @@
                                 </div>
                             </div>
 
+                            <!-- Social Links Row -->
                             <div class="social-links-grid">
                                 <a href="https://github.com/John-Vianney-Ssennono" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
                                     <i class="fa-brands fa-github"></i>
@@ -888,23 +1049,27 @@
                         </div>
                     </div>
 
-                    <!-- Right: Quick Interactive Dispatch Box -->
+                    <!-- Right: Quick Interactive Message Dispatch Box -->
                     <div class="contact-form-col">
                         <div class="contact-form-card apple-glass-card">
                             <h3 class="form-title">Send a Direct Message</h3>
                             <p class="form-desc">Fires directly to my university mailbox or pre-populates your email client.</p>
 
+                            <!-- Interactive dispatch form -->
                             <form id="contactForm" class="apple-form">
+                                <!-- Sender Name Field -->
                                 <div class="form-group">
                                     <label for="senderName">Your Name</label>
                                     <input type="text" id="senderName" required placeholder="Dr. Jane Doe / Recruiter Name" class="apple-input">
                                 </div>
 
+                                <!-- Sender Email Field -->
                                 <div class="form-group">
                                     <label for="senderEmail">Your Email</label>
                                     <input type="email" id="senderEmail" required placeholder="jane.doe@organization.com" class="apple-input">
                                 </div>
 
+                                <!-- Subject Topic Dropdown -->
                                 <div class="form-group">
                                     <label for="messageSubject">Subject / Topic</label>
                                     <select id="messageSubject" class="apple-input">
@@ -915,11 +1080,13 @@
                                     </select>
                                 </div>
 
+                                <!-- Message Body Field -->
                                 <div class="form-group">
                                     <label for="messageBody">Message</label>
                                     <textarea id="messageBody" rows="4" required placeholder="Hello John, I came across your EV power optimization review and obstacle-detection hardware..." class="apple-input apple-textarea"></textarea>
                                 </div>
 
+                                <!-- Submit Button -->
                                 <button type="submit" class="btn-pill btn-pill-accent btn-full">
                                     <i class="fa-solid fa-paper-plane"></i>
                                     <span>Open in Email Client</span>
@@ -932,9 +1099,12 @@
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- ========================================================================================= -->
+    <!-- FOOTER SECTION -->
+    <!-- ========================================================================================= -->
     <footer class="footer-container">
         <div class="container footer-content">
+            <!-- Left: Monogram and academic credits -->
             <div class="footer-left">
                 <span class="brand-monogram monogram-sm">JS</span>
                 <p>
@@ -943,6 +1113,7 @@
                 </p>
             </div>
 
+            <!-- Right: Design credits and smooth back-to-top button -->
             <div class="footer-right">
                 <p class="footer-copy">
                     Engineered with pure HTML, Vanilla CSS & JavaScript.<br>
@@ -957,9 +1128,12 @@
         </div>
     </footer>
 
-    <!-- Interactive Resume Modal -->
+    <!-- ========================================================================================= -->
+    <!-- INTERACTIVE RESUME MODAL DIALOG (APPLE VISION SHEET) -->
+    <!-- ========================================================================================= -->
     <div class="modal-overlay" id="resumeModal" aria-hidden="true">
         <div class="modal-glass-container" role="dialog" aria-labelledby="resumeModalTitle">
+            <!-- Modal Header -->
             <div class="modal-header">
                 <div class="modal-title-group">
                     <i class="fa-solid fa-file-pdf text-brown"></i>
@@ -970,13 +1144,16 @@
                 </button>
             </div>
 
+            <!-- Modal Printable Resume Sheet -->
             <div class="modal-body">
                 <div class="resume-sheet">
+                    <!-- Resume Header -->
                     <div class="r-head">
                         <h2>John Vianney Ssennono</h2>
                         <p>john.vianney.ssennono-1@ou.edu | 405-441-8039 | Norman, OK | University of Oklahoma</p>
                     </div>
 
+                    <!-- Resume Section 1: Education -->
                     <div class="r-section">
                         <h4>EDUCATION</h4>
                         <div class="r-row">
@@ -993,6 +1170,7 @@
                         </p>
                     </div>
 
+                    <!-- Resume Section 2: Projects -->
                     <div class="r-section">
                         <h4>PROJECTS</h4>
                         <p class="r-project-title"><strong>Autonomous Obstacle-Detection Vision Glasses</strong> (May 2026 – Present)</p>
@@ -1009,6 +1187,7 @@
                         </ul>
                     </div>
 
+                    <!-- Resume Section 3: Experience -->
                     <div class="r-section">
                         <h4>EXPERIENCE</h4>
                         <div class="r-row">
@@ -1048,6 +1227,7 @@
                         </ul>
                     </div>
 
+                    <!-- Resume Section 4: Skills -->
                     <div class="r-section">
                         <h4>TECHNICAL SKILLS</h4>
                         <p class="r-text">
@@ -1058,6 +1238,7 @@
                 </div>
             </div>
 
+            <!-- Modal Action Buttons (Print / PDF / Email) -->
             <div class="modal-footer">
                 <button type="button" class="btn-pill btn-pill-outline" id="printResumeBtn">
                     <i class="fa-solid fa-print"></i> Print / Save as PDF
@@ -1069,10 +1250,15 @@
         </div>
     </div>
 
-    <!-- Toast Notification for Copy Actions -->
+    <!-- ========================================================================================= -->
+    <!-- TOAST NOTIFICATION CONTAINER (FOR COPY & THEME ALERTS) -->
+    <!-- ========================================================================================= -->
     <div id="toast" class="toast-notification" aria-live="polite">Copied to clipboard!</div>
 
-    <!-- Interactive Script -->
+    <!-- ========================================================================================= -->
+    <!-- JAVASCRIPT CONTROLLER SCRIPT INCLUSION -->
+    <!-- ========================================================================================= -->
+    <!-- Loads all interactive simulation, theme switching, and navigation event listeners -->
     <script src="script.js"></script>
 </body>
 </html>
