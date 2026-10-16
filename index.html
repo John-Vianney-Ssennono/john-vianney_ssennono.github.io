@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Vianney Ssennono — Electrical & Embedded Systems Engineer</title>
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Portfolio of John Vianney Ssennono, Electrical Engineering student at the University of Oklahoma (3.7 GPA). Embedded hardware prototyping, EV power optimization researcher, and systems engineer.">
+    <meta name="keywords" content="John Vianney Ssennono, Electrical Engineering, Embedded Systems, C Programming, University of Oklahoma, Arduino, Power Optimization, Electric Vehicles, Machine Learning, Sooner Rover">
+    <meta name="author" content="John Vianney Ssennono">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="John Vianney Ssennono — Electrical & Embedded Systems Engineer">
+    <meta property="og:description" content="Embedded hardware prototyping, EV power optimization research, and intelligent systems. University of Oklahoma EE (3.7 GPA).">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://john-vianney-ssennono.github.io/">
+
+    <!-- Favicon (Apple Glass Monogram) -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Fonts: Apple SF Pro Display / Inter & JetBrains Mono for Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main Stylesheet (Vanilla CSS, Apple Vision Glass, Navy & Brown Theme) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Ambient Glow Orbs -->
+    <div class="ambient-canvas" aria-hidden="true">
+        <div class="ambient-orb orb-navy-1"></div>
+        <div class="ambient-orb orb-brown-1"></div>
+        <div class="ambient-orb orb-navy-2"></div>
+        <div class="ambient-orb orb-brown-2"></div>
+    </div>
+
+    <!-- Navigation Bar (Floating Glass Capsule) -->
+    <header class="header-container" id="top">
+        <nav class="nav-glass" aria-label="Main Navigation">
+            <a href="#top" class="brand-link" aria-label="John Vianney Ssennono Home">
+                <span class="brand-monogram">JS</span>
+                <span class="brand-name">
+                    <strong>John Vianney</strong>
+                    <span class="brand-sub">Electrical Engineering</span>
+                </span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <!-- Theme Switcher (Dark / Light) -->
+                <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Dark and Light Mode" title="Toggle Theme (Dark / Light)">
+                    <i class="fa-solid fa-moon icon-dark"></i>
+                    <i class="fa-solid fa-sun icon-light"></i>
+                    <span class="theme-label" id="themeLabelText">Dark</span>
+                </button>
+
+                <!-- Quick Resume Button -->
+                <a href="#resume-modal" id="openResumeBtn" class="btn-pill btn-pill-primary">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>Resume</span>
+                </a>
+
+                <!-- Mobile Menu Hamburger -->
+                <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+        <div class="drawer-links">
+            <a href="#about" class="drawer-link"><i class="fa-solid fa-user-astronaut"></i> About</a>
+            <a href="#research" class="drawer-link"><i class="fa-solid fa-microscope"></i> Research</a>
+            <a href="#projects" class="drawer-link"><i class="fa-solid fa-microchip"></i> Projects</a>
+            <a href="#experience" class="drawer-link"><i class="fa-solid fa-briefcase"></i> Experience</a>
+            <a href="#skills" class="drawer-link"><i class="fa-solid fa-sliders"></i> Skills</a>
+            <a href="#contact" class="drawer-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="section hero-section">
+            <div class="container hero-grid">
+                <div class="hero-text-col">
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        <span class="status-text">University of Oklahoma · B.S. Electrical Engineering · 3.7 GPA</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Building intelligent hardware from <span class="gradient-text-navy">schematic</span> to <span class="gradient-text-brown">execution</span>.
+                    </h1>
+
+                    <p class="hero-description">
+                        I am an Electrical Engineering student working at the intersection of embedded hardware prototyping, power optimization, and intelligent systems. From low-latency C programming on microcontrollers to data-driven energy reviews of electric vehicles, I build resilient systems that bridge theory with physical reality.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-pill btn-pill-accent">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>Explore Hardware</span>
+                        </a>
+                        <a href="#research" class="btn-pill btn-pill-outline">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>EV Research Spotlight</span>
+                        </a>
+                        <a href="#contact" class="btn-pill btn-pill-ghost">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Get in Touch</span>
+                        </a>
+                    </div>
+
+                    <!-- Metrics Ticker -->
+                    <div class="hero-metrics">
+                        <div class="metric-card">
+                            <span class="metric-num">3.7</span>
+                            <span class="metric-label">GPA · Honors Society</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-num">600+</span>
+                            <span class="metric-label">EV Studies Synthesized</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-num">100k+</span>
+                            <span class="metric-label">Accounts Supported</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-num">&lt;15ms</span>
+                            <span class="metric-label">Embedded Logic Feedback</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Hardware Concept Card (Vision Glass) -->
+                <div class="hero-visual-col">
+                    <div class="apple-glass-card hero-preview-card">
+                        <div class="card-header-bar">
+                            <div class="window-dots">
+                                <span class="w-dot red"></span>
+                                <span class="w-dot yellow"></span>
+                                <span class="w-dot green"></span>
+                            </div>
+                            <span class="card-title-pill">
+                                <i class="fa-solid fa-terminal"></i> system_telemetry.c
+                            </span>
+                            <span class="card-chip">LIVE</span>
+                        </div>
+
+                        <div class="code-preview-terminal">
+<pre><code><span class="c-dim">// Real-Time Hardware Sensor Daemon</span>
+<span class="c-keyword">#include</span> <span class="c-str">&lt;avr/io.h&gt;</span>
+<span class="c-keyword">#include</span> <span class="c-str">&lt;util/delay.h&gt;</span>
+
+<span class="c-type">typedef struct</span> {
+    <span class="c-type">float</span> threshold_cm;
+    <span class="c-type">bool</span>  haptic_alert;
+    <span class="c-type">uint16_t</span> pulse_us;
+} <span class="c-func">SensoryArray</span>;
+
+<span class="c-func">SensoryArray</span> glasses = {
+    .threshold_cm = <span class="c-num">15.0f</span>,
+    .haptic_alert = <span class="c-num">true</span>,
+    .pulse_us     = <span class="c-num">882</span>
+};</code></pre>
+                        </div>
+
+                        <!-- Live Visual Circuit Indicator -->
+                        <div class="circuit-indicator-box">
+                            <div class="indicator-row">
+                                <span class="indicator-label"><i class="fa-solid fa-microchip"></i> Microcontroller Core</span>
+                                <span class="indicator-val text-navy">ATmega328P / 16MHz</span>
+                            </div>
+                            <div class="indicator-row">
+                                <span class="indicator-label"><i class="fa-solid fa-bolt"></i> Power Optimization</span>
+                                <span class="indicator-val text-brown">5.0V Regulated Rail</span>
+                            </div>
+                            <div class="indicator-row">
+                                <span class="indicator-label"><i class="fa-solid fa-wave-square"></i> Sensor Loop Frequency</span>
+                                <span class="indicator-val text-emerald">40 kHz Ultrasonic Echo</span>
+                            </div>
+                        </div>
+
+                        <!-- Mini Status Footer -->
+                        <div class="card-status-footer">
+                            <div class="status-left">
+                                <i class="fa-solid fa-shield-halved text-brown"></i>
+                                <span>Firmware verified on oscilloscope</span>
+                            </div>
+                            <span class="badge-mini">OU Engineering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Narrative Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Academic & Professional Profile</span>
+                    <h2 class="section-title">Bridging rigorous research with hands-on systems.</h2>
+                    <p class="section-subtitle">
+                        From schematic capture to enterprise-scale IT, I focus on building power-efficient, reliable technologies.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-bio-card apple-glass-card">
+                        <div class="bio-lead">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p>
+                                I am an Electrical Engineering student at the <strong>University of Oklahoma (3.7 GPA)</strong> working at the intersection of embedded hardware prototyping, power optimization, and intelligent systems.
+                            </p>
+                        </div>
+                        <p class="bio-text">
+                            My technical background bridges rigorous academic research with hands-on systems execution—ranging from low-latency C programming on microcontrollers to data-driven energy analysis and enterprise-scale IT operations.
+                        </p>
+                        <p class="bio-text">
+                            As the first author of a systematic review on machine learning applications in electric vehicle power efficiency, I synthesized data across <strong>600+ peer-reviewed studies</strong> to analyze energy optimization, battery performance, and grid resilience. On the physical implementation side, I take ideas from schematic to working hardware: designing wearable obstacle-detection systems using Arduino and embedded C, building real-time digital logic and sensor circuits, and validating hardware using lab instrumentation like oscilloscopes.
+                        </p>
+                        <p class="bio-text">
+                            Outside the lab, I actively engage with multidisciplinary teams through the <strong>Jerry Holmes Leadership Program</strong>, <strong>IEEE</strong>, <strong>NSBE</strong>, and robotics initiatives like <strong>Sooner Rover</strong>. I am driven to build resilient, efficient electrical and embedded systems that solve real-world problems in power, mobility, and sustainable technology.
+                        </p>
+
+                        <div class="about-tags">
+                            <span class="tag"><i class="fa-solid fa-graduation-cap"></i> B.S. Electrical Engineering (Dec 2027)</span>
+                            <span class="tag"><i class="fa-solid fa-building-columns"></i> University of Oklahoma</span>
+                            <span class="tag"><i class="fa-solid fa-award"></i> 3.7 GPA · Alpha Lambda Delta</span>
+                            <span class="tag"><i class="fa-solid fa-users"></i> Jerry Holmes Leadership</span>
+                            <span class="tag"><i class="fa-solid fa-robot"></i> Sooner Rover Robotics</span>
+                        </div>
+                    </div>
+
+                    <div class="about-pillars-col">
+                        <!-- Pillar 1 -->
+                        <div class="pillar-card apple-glass-card">
+                            <div class="pillar-icon bg-navy-gradient">
+                                <i class="fa-solid fa-microchip"></i>
+                            </div>
+                            <div class="pillar-content">
+                                <h3>Embedded Prototyping</h3>
+                                <p>Designing functional hardware from breadboard schematics to custom firmware using C, AVR registers, Arduino IDE, sensor arrays, and oscilloscopes.</p>
+                            </div>
+                        </div>
+
+                        <!-- Pillar 2 -->
+                        <div class="pillar-card apple-glass-card">
+                            <div class="pillar-icon bg-brown-gradient">
+                                <i class="fa-solid fa-charging-station"></i>
+                            </div>
+                            <div class="pillar-content">
+                                <h3>Power & EV Optimization</h3>
+                                <p>First-author research synthesizing machine learning models for battery management systems (BMS), energy consumption, and power grid resilience.</p>
+                            </div>
+                        </div>
+
+                        <!-- Pillar 3 -->
+                        <div class="pillar-card apple-glass-card">
+                            <div class="pillar-icon bg-navy-gradient">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                            <div class="pillar-content">
+                                <h3>Enterprise Systems & Operations</h3>
+                                <p>Operations experience supporting 100,000+ university accounts, Aruba WiFi networks, Cisco VoIP infrastructure, and technology labs across Oklahoma.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Spotlight Section (600+ EV Papers Systematic Review) -->
+        <section id="research" class="section research-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Academic Research Spotlight</span>
+                    <h2 class="section-title">Machine Learning in Electric Vehicle Power Efficiency</h2>
+                    <p class="section-subtitle">
+                        First-Author Systematic Review (2015–2025) · Frontiers SA - Frontiers in Artificial Intelligence
+                    </p>
+                </div>
+
+                <div class="research-showcase apple-glass-card">
+                    <div class="research-badge-row">
+                        <span class="pill-badge pill-brown"><i class="fa-solid fa-book-bookmark"></i> First Author</span>
+                        <span class="pill-badge pill-navy"><i class="fa-solid fa-earth-americas"></i> 10+ Countries Reviewed</span>
+                        <span class="pill-badge pill-emerald"><i class="fa-solid fa-file-circle-check"></i> Pending Publication · Frontiers in AI</span>
+                    </div>
+
+                    <div class="research-grid">
+                        <div class="research-desc-col">
+                            <h3 class="research-headline">
+                                Synthesizing 600+ Global Studies to Accelerate Next-Gen EV Energy Optimization
+                            </h3>
+                            <p class="research-text">
+                                Led a rigorous systematic review synthesizing quantitative data across 600+ peer-reviewed studies published between 2015 and 2025. Evaluated deep learning architectures, reinforcement learning algorithms, and real-time state-of-charge (SoC) predictors applied to automotive energy efficiency.
+                            </p>
+                            <p class="research-text">
+                                Collaborated with an international team of researchers spanning four continents to construct a unified taxonomy of AI-driven power optimization—pinpointing critical gaps in real-time edge hardware deployment, thermal throttling, and vehicle-to-grid (V2G) integration.
+                            </p>
+
+                            <div class="research-takeaways">
+                                <div class="takeaway-item">
+                                    <div class="takeaway-dot"></div>
+                                    <div>
+                                        <strong>Battery Management Systems (BMS):</strong>
+                                        <span>LSTM and Transformer architectures improve State-of-Health (SoH) prediction accuracy up to 18% over conventional Coulomb-counting.</span>
+                                    </div>
+                                </div>
+                                <div class="takeaway-item">
+                                    <div class="takeaway-dot"></div>
+                                    <div>
+                                        <strong>Regenerative Braking Optimization:</strong>
+                                        <span>Deep Q-Networks (DQN) dynamically capture 12–15% more braking kinetic energy in urban stop-and-go drive cycles.</span>
+                                    </div>
+                                </div>
+                                <div class="takeaway-item">
+                                    <div class="takeaway-dot"></div>
+                                    <div>
+                                        <strong>Hardware-in-the-Loop Constraints:</strong>
+                                        <span>Identified embedded computational latency as the #1 bottleneck preventing edge deployment on low-cost automotive ECUs.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Research Data Explorer -->
+                        <div class="research-interactive-col">
+                            <div class="interactive-glass-panel">
+                                <div class="panel-header">
+                                    <span class="panel-title"><i class="fa-solid fa-chart-pie"></i> Research Domain Breakdown</span>
+                                    <span class="panel-tag">600+ Papers</span>
+                                </div>
+
+                                <div class="domain-bars">
+                                    <div class="domain-row" data-pct="38">
+                                        <div class="domain-info">
+                                            <span>Battery Health & SoC Prediction</span>
+                                            <strong>38% (228 papers)</strong>
+                                        </div>
+                                        <div class="domain-bar-track">
+                                            <div class="domain-bar-fill bar-navy" style="width: 38%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="domain-row" data-pct="27">
+                                        <div class="domain-info">
+                                            <span>Powertrain & Torque Vectoring</span>
+                                            <strong>27% (162 papers)</strong>
+                                        </div>
+                                        <div class="domain-bar-track">
+                                            <div class="domain-bar-fill bar-brown" style="width: 27%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="domain-row" data-pct="21">
+                                        <div class="domain-info">
+                                            <span>Regenerative Braking Systems</span>
+                                            <strong>21% (126 papers)</strong>
+                                        </div>
+                                        <div class="domain-bar-track">
+                                            <div class="domain-bar-fill bar-navy" style="width: 21%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="domain-row" data-pct="14">
+                                        <div class="domain-info">
+                                            <span>Vehicle-to-Grid (V2G) Resilience</span>
+                                            <strong>14% (84 papers)</strong>
+                                        </div>
+                                        <div class="domain-bar-track">
+                                            <div class="domain-bar-fill bar-brown" style="width: 14%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="citation-callout">
+                                    <div class="callout-icon"><i class="fa-solid fa-quote-right"></i></div>
+                                    <div class="callout-text">
+                                        <em>"Machine Learning in Electric Vehicle Power Efficiency (2015–2025): A Systematic Review."</em><br>
+                                        <strong>Ssennono, J. V., et al.</strong> — Frontiers in Artificial Intelligence (Submitted).
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Hardware Prototyping Section with Live Logic Simulation -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Hardware & Embedded Engineering</span>
+                    <h2 class="section-title">Physical Prototypes & Intelligent Circuits</h2>
+                    <p class="section-subtitle">
+                        Translating theoretical circuit equations into physical devices tested on the bench.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Autonomous Obstacle-Detection Vision Glasses -->
+                    <div class="project-card apple-glass-card" id="project-glasses">
+                        <div class="project-card-header">
+                            <div class="project-badge-group">
+                                <span class="card-pill pill-navy">Wearable Hardware</span>
+                                <span class="card-pill pill-brown">Embedded C</span>
+                                <span class="card-pill pill-emerald">Active Prototype</span>
+                            </div>
+                            <span class="project-date">May 2026 – Present</span>
+                        </div>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Autonomous Obstacle-Detection Vision Glasses</h3>
+                            <p class="project-description">
+                                Designed and prototyped a wearable embedded assistive system using an Arduino Uno microcontroller, integrating an ultrasonic distance sensor (HC-SR04) and a piezoelectric buzzer for real-time proximity feedback to aid visually impaired navigation.
+                            </p>
+
+                            <ul class="project-highlights">
+                                <li><strong>Low-Latency Embedded Logic:</strong> Authored interrupt-driven C control routines, validating reliable sub-15ms threshold detection at a 15 cm safe distance.</li>
+                                <li><strong>Hardware Power Optimization:</strong> Applied power supply decoupling and noise-filtering capacitors to maintain stable 5V rail integrity under acoustic pulsing.</li>
+                                <li><strong>Iterative Validation:</strong> Validated sensor echo timing using an oscilloscope to calibrate speed-of-sound temperature coefficients.</li>
+                            </ul>
+
+                            <!-- Interactive Live Simulator: Test the Glasses Logic Right on the Page -->
+                            <div class="interactive-simulator-box">
+                                <div class="sim-header">
+                                    <span class="sim-title"><i class="fa-solid fa-sliders"></i> Interactive Firmware Logic Simulator</span>
+                                    <span class="sim-status" id="simStatusPill">Safe Clearance</span>
+                                </div>
+
+                                <div class="sim-controls">
+                                    <label for="distanceSlider" class="sim-slider-label">
+                                        <span>Proximity Distance: <strong id="distanceVal" class="text-brown">25 cm</strong></span>
+                                        <span class="text-dim">Threshold = 15 cm</span>
+                                    </label>
+                                    <input type="range" id="distanceSlider" min="2" max="60" value="25" step="1" class="apple-slider">
+                                </div>
+
+                                <div class="sim-display-grid">
+                                    <div class="sim-meter">
+                                        <span class="meter-label">Trigger Logic</span>
+                                        <span class="meter-val" id="simLogicVal">IDLE (No Alert)</span>
+                                    </div>
+                                    <div class="sim-meter">
+                                        <span class="meter-label">Pulse Delay (us)</span>
+                                        <span class="meter-val" id="simPulseVal">1,470 µs</span>
+                                    </div>
+                                    <div class="sim-meter">
+                                        <span class="meter-label">Acoustic Feedback</span>
+                                        <span class="meter-val" id="simAcousticVal">Muted (0 Hz)</span>
+                                    </div>
+                                </div>
+
+                                <div class="sim-code-snippet">
+                                    <code>
+                                        <span class="c-keyword">if</span> (distance_cm &lt;= <span class="c-num">15</span>) { 
+                                        <span class="c-func">triggerBuzzer</span>(HIGH); <span class="c-comment">// Obstacle alert!</span>
+                                        } <span class="c-keyword">else</span> { 
+                                        <span class="c-func">triggerBuzzer</span>(LOW); 
+                                        }
+                                    </code>
+                                </div>
+                            </div>
+
+                            <div class="project-tags">
+                                <span class="tag-sm">Arduino Uno</span>
+                                <span class="tag-sm">Embedded C</span>
+                                <span class="tag-sm">HC-SR04 Ultrasonic</span>
+                                <span class="tag-sm">Piezoelectric Buzzer</span>
+                                <span class="tag-sm">Oscilloscope Verification</span>
+                                <span class="tag-sm">Power Regulation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Door Reed Switch & LED Status Indicator System -->
+                    <div class="project-card apple-glass-card" id="project-reed">
+                        <div class="project-card-header">
+                            <div class="project-badge-group">
+                                <span class="card-pill pill-navy">Digital Logic</span>
+                                <span class="card-pill pill-brown">Signaling Circuit</span>
+                                <span class="card-pill pill-emerald">Deployed</span>
+                            </div>
+                            <span class="project-date">Aug – Dec 2024</span>
+                        </div>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Door Reed Switch & LED Status Indicator System</h3>
+                            <p class="project-description">
+                                Designed, fabricated, and delivered a real-time availability signaling circuit using magnetic reed switches and high-visibility color-coded LEDs to communicate live office occupancy across OU Engineering Pathways Offices.
+                            </p>
+
+                            <ul class="project-highlights">
+                                <li><strong>Rapid Deployment:</strong> Delivered a fully tested, functional prototype within 1 month, reducing office walk-up interruption rates under 1 minute.</li>
+                                <li><strong>High-Visibility Optical Clarity:</strong> Tuned resistor ballast arrays to achieve crisp visual indication visible from 20+ feet down corridors.</li>
+                                <li><strong>Contact Debounce Circuitry:</strong> Integrated passive RC low-pass filter networks to suppress mechanical contact bounce and prevent spurious LED toggling.</li>
+                            </ul>
+
+                            <!-- Interactive Switch Demo -->
+                            <div class="interactive-simulator-box">
+                                <div class="sim-header">
+                                    <span class="sim-title"><i class="fa-solid fa-door-open"></i> Circuit State Visualizer</span>
+                                    <span class="sim-status sim-green" id="doorStatusPill">Office Open (Green LED)</span>
+                                </div>
+
+                                <div class="door-interactive-row">
+                                    <button type="button" id="toggleDoorBtn" class="btn-pill btn-pill-outline btn-sm">
+                                        <i class="fa-solid fa-toggle-on"></i> Toggle Door State
+                                    </button>
+                                    <div class="door-status-display">
+                                        <div class="circuit-led" id="circuitLed"></div>
+                                        <span id="circuitLedText" class="font-mono text-sm">ACTIVE: GREEN (Available)</span>
+                                    </div>
+                                </div>
+
+                                <div class="circuit-specs-row">
+                                    <div class="spec-pill"><i class="fa-solid fa-eye"></i> 20-Foot Visible Range</div>
+                                    <div class="spec-pill"><i class="fa-solid fa-stopwatch"></i> &lt;100ms Response</div>
+                                    <div class="spec-pill"><i class="fa-solid fa-battery-half"></i> Low-Power Standby</div>
+                                </div>
+                            </div>
+
+                            <div class="project-tags">
+                                <span class="tag-sm">Magnetic Reed Switches</span>
+                                <span class="tag-sm">Digital Logic Design</span>
+                                <span class="tag-sm">RC Debounce Filter</span>
+                                <span class="tag-sm">Color-Coded LEDs</span>
+                                <span class="tag-sm">Circuit Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Leadership Timeline -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Professional History & Leadership</span>
+                    <h2 class="section-title">Hands-On Experience & Operations</h2>
+                    <p class="section-subtitle">
+                        Supporting enterprise educational technology, leading STEM initiatives, and operating university cloud infrastructure.
+                    </p>
+                </div>
+
+                <div class="experience-timeline">
+                    <!-- Exp 1: OETT -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot bg-navy-solid"></div>
+                        <div class="timeline-card apple-glass-card">
+                            <div class="card-meta">
+                                <span class="exp-title">OETT Technology Assistant</span>
+                                <span class="exp-date">Sept 2026 – Present</span>
+                            </div>
+                            <div class="exp-org">
+                                <strong>The Oklahoma Educational Technology Trust (OETT)</strong> · Norman, OK
+                            </div>
+                            <ul class="exp-bullets">
+                                <li>Set up, organize, and maintain equipment in the OETT technology demonstration room.</li>
+                                <li>Operate and maintain specialized hardware including autonomous drones, educational robotics kits, 3D printers, laser engravers, and studio video gear.</li>
+                                <li>Assist with expense reporting, asset cataloging, device inventory updates, and statewide professional development preparation.</li>
+                            </ul>
+                            <div class="exp-tags">
+                                <span>3D Printing</span>
+                                <span>Laser Engraving</span>
+                                <span>Robotics</span>
+                                <span>Drones</span>
+                                <span>Inventory & Fiscal Records</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exp 2: Research Study Assistant -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot bg-brown-solid"></div>
+                        <div class="timeline-card apple-glass-card">
+                            <div class="card-meta">
+                                <span class="exp-title">Research Study Assistant</span>
+                                <span class="exp-date">May 2025 – Present</span>
+                            </div>
+                            <div class="exp-org">
+                                <strong>Jeannine Rainbolt College of Education, University of Oklahoma</strong> · Norman, OK
+                            </div>
+                            <ul class="exp-bullets">
+                                <li>Designed and deployed a data-driven mathematics tutoring framework for 12 secondary students, leveraging tracking metrics to measure performance outcomes.</li>
+                                <li>Analyzed standardized test data and academic progress markers to optimize individualized instructional strategies.</li>
+                                <li>Collaborated with multiple mathematics teachers across 3 Oklahoma Metro area schools; acquired official <strong>SAGA Tutoring Certification</strong>.</li>
+                            </ul>
+                            <div class="exp-tags">
+                                <span>Statistical Analytics</span>
+                                <span>Data-Driven Tutoring</span>
+                                <span>SAGA Certified</span>
+                                <span>Curriculum Metrics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exp 3: Undergraduate Researcher (Frontiers AI) -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot bg-navy-solid"></div>
+                        <div class="timeline-card apple-glass-card">
+                            <div class="card-meta">
+                                <span class="exp-title">Undergraduate Researcher (First Author)</span>
+                                <span class="exp-date">June 2025 – Aug 2026</span>
+                            </div>
+                            <div class="exp-org">
+                                <strong>Frontiers SA — Frontiers in Artificial Intelligence</strong>
+                            </div>
+                            <ul class="exp-bullets">
+                                <li>First Author of systematic review analyzing machine learning applications in EV power optimization (2015–2025).</li>
+                                <li>Synthesized quantitative data from 600+ peer-reviewed global studies on deep learning algorithms and automotive power efficiency gaps.</li>
+                                <li>Collaborated across an international 3-person team reviewing literature from over 10 countries across every continent.</li>
+                            </ul>
+                            <div class="exp-tags">
+                                <span>EV Power Systems</span>
+                                <span>Machine Learning</span>
+                                <span>First Author</span>
+                                <span>Academic Literature Synthesis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exp 4: IT Service Delivery Specialist -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot bg-brown-solid"></div>
+                        <div class="timeline-card apple-glass-card">
+                            <div class="card-meta">
+                                <span class="exp-title">IT Service Delivery Specialist</span>
+                                <span class="exp-date">June 2025 – Sept 2026</span>
+                            </div>
+                            <div class="exp-org">
+                                <strong>University of Oklahoma IT</strong> · Norman, OK
+                            </div>
+                            <ul class="exp-bullets">
+                                <li>Monitored and maintained real-time system uptime and security compliance across cloud infrastructure supporting <strong>100,000+ university accounts</strong> on a 39-person operations team.</li>
+                                <li>Identified, logged, and resolved system malfunctions under tight SLAs, collaborating across departments.</li>
+                                <li>Monitored Cisco phone systems and campus-wide Aruba WiFi network infrastructure; utilized Excel and Power BI for enterprise reporting.</li>
+                            </ul>
+                            <div class="exp-tags">
+                                <span>100,000+ Accounts</span>
+                                <span>Aruba WiFi</span>
+                                <span>Cisco VoIP</span>
+                                <span>Power BI</span>
+                                <span>Cloud Infrastructure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership & Extracurriculars Ribbon -->
+                <div class="leadership-box apple-glass-card">
+                    <div class="leadership-title-row">
+                        <i class="fa-solid fa-medal text-brown"></i>
+                        <h3>Leadership, Societies & Extracurricular Activities</h3>
+                    </div>
+                    <div class="leadership-chips-grid">
+                        <div class="l-chip">
+                            <i class="fa-solid fa-compass"></i>
+                            <div>
+                                <strong>Jerry Holmes Leadership Program</strong>
+                                <span>Engineering leadership & ethics development</span>
+                            </div>
+                        </div>
+                        <div class="l-chip">
+                            <i class="fa-solid fa-network-wired"></i>
+                            <div>
+                                <strong>IEEE (Institute of Electrical and Electronics Engineers)</strong>
+                                <span>Active Student Member</span>
+                            </div>
+                        </div>
+                        <div class="l-chip">
+                            <i class="fa-solid fa-users"></i>
+                            <div>
+                                <strong>NSBE (National Society of Black Engineers)</strong>
+                                <span>Collegiate Chapter Member</span>
+                            </div>
+                        </div>
+                        <div class="l-chip">
+                            <i class="fa-solid fa-robot"></i>
+                            <div>
+                                <strong>Sooner Rover Robotics</strong>
+                                <span>Embedded hardware & robotics subsystem development</span>
+                            </div>
+                        </div>
+                        <div class="l-chip">
+                            <i class="fa-solid fa-atom"></i>
+                            <div>
+                                <strong>Quantum Society & LLM Engineering Club</strong>
+                                <span>Next-gen computing & AI architectures</span>
+                            </div>
+                        </div>
+                        <div class="l-chip">
+                            <i class="fa-solid fa-star"></i>
+                            <div>
+                                <strong>OU Alpha Lambda Delta National Honors Society</strong>
+                                <span>Top academic standing (3.7 GPA)</span>
+                            </div>
+                        </div>
+                        <div class="l-chip">
+                            <i class="fa-solid fa-globe"></i>
+                            <div>
+                                <strong>African Students’ Association & East African Alliance</strong>
+                                <span>Cultural engagement and community outreach</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills & Engineering Arsenal -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Technical Skills & Arsenal</span>
+                    <h2 class="section-title">Hardware, Software & Laboratory Mastery</h2>
+                    <p class="section-subtitle">
+                        A rigorous set of engineering fundamentals developed through coursework, lab benches, and self-directed builds.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1: Programming & Computing -->
+                    <div class="skill-category-card apple-glass-card">
+                        <div class="category-header">
+                            <div class="cat-icon bg-navy-gradient"><i class="fa-solid fa-code"></i></div>
+                            <div>
+                                <h3>Programming & Software</h3>
+                                <p>Embedded & scientific computing</p>
+                            </div>
+                        </div>
+                        <div class="skill-items-list">
+                            <div class="skill-badge-row">
+                                <span class="skill-badge"><strong>C</strong> (Embedded / Low-Latency)</span>
+                                <span class="skill-badge"><strong>Python</strong> (Data & Scientific)</span>
+                                <span class="skill-badge"><strong>MATLAB</strong> (Signal Analysis)</span>
+                                <span class="skill-badge"><strong>LaTeX</strong> (Academic Documentation)</span>
+                                <span class="skill-badge"><strong>Arduino IDE</strong> (Firmware Flashing)</span>
+                                <span class="skill-badge"><strong>Power BI</strong> (Telemetry Dashboards)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Hardware & Lab Equipment -->
+                    <div class="skill-category-card apple-glass-card">
+                        <div class="category-header">
+                            <div class="cat-icon bg-brown-gradient"><i class="fa-solid fa-microchip"></i></div>
+                            <div>
+                                <h3>Hardware & Prototyping</h3>
+                                <p>Circuit design & instrumentation</p>
+                            </div>
+                        </div>
+                        <div class="skill-items-list">
+                            <div class="skill-badge-row">
+                                <span class="skill-badge"><strong>Arduino Hardware Integration</strong></span>
+                                <span class="skill-badge"><strong>Circuit Analysis I & II</strong></span>
+                                <span class="skill-badge"><strong>Digital Logic Design</strong></span>
+                                <span class="skill-badge"><strong>Digital Signals & Filtering</strong></span>
+                                <span class="skill-badge"><strong>Sensor Integration</strong></span>
+                                <span class="skill-badge"><strong>Oscilloscopes & Multimeters</strong></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: CAD & Rapid Fabrication -->
+                    <div class="skill-category-card apple-glass-card">
+                        <div class="category-header">
+                            <div class="cat-icon bg-navy-gradient"><i class="fa-solid fa-cube"></i></div>
+                            <div>
+                                <h3>CAD & Fabrication</h3>
+                                <p>3D modeling & physical prototyping</p>
+                            </div>
+                        </div>
+                        <div class="skill-items-list">
+                            <div class="skill-badge-row">
+                                <span class="skill-badge"><strong>Autodesk Fusion 360</strong></span>
+                                <span class="skill-badge"><strong>TinkerCAD</strong></span>
+                                <span class="skill-badge"><strong>3D Printing</strong> (FDM / Slicers)</span>
+                                <span class="skill-badge"><strong>Laser Engraving</strong></span>
+                                <span class="skill-badge"><strong>Breadboarding & Soldering</strong></span>
+                                <span class="skill-badge"><strong>Component Selection</strong></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 4: Coursework & Systems -->
+                    <div class="skill-category-card apple-glass-card">
+                        <div class="category-header">
+                            <div class="cat-icon bg-brown-gradient"><i class="fa-solid fa-network-wired"></i></div>
+                            <div>
+                                <h3>Infrastructure & Systems</h3>
+                                <p>Enterprise operations & coursework</p>
+                            </div>
+                        </div>
+                        <div class="skill-items-list">
+                            <div class="skill-badge-row">
+                                <span class="skill-badge"><strong>Electronics & Circuits Lab</strong></span>
+                                <span class="skill-badge"><strong>Aruba Enterprise WiFi</strong></span>
+                                <span class="skill-badge"><strong>Cisco VoIP Infrastructure</strong></span>
+                                <span class="skill-badge"><strong>Cloud Identity & Access</strong></span>
+                                <span class="skill-badge"><strong>Technical Communication</strong></span>
+                                <span class="skill-badge"><strong>Project Planning & Leadership</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Let's Connect</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">
+                        Interested in collaborating on embedded hardware, EV power research, or engineering internships? Let's talk.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Contact Details & Quick Copy Cards -->
+                    <div class="contact-details-col">
+                        <div class="contact-card apple-glass-card">
+                            <div class="c-info-row">
+                                <div class="c-icon bg-navy-gradient"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="c-text">
+                                    <span class="c-label">University Email</span>
+                                    <a href="mailto:john.vianney.ssennono-1@ou.edu" class="c-val">john.vianney.ssennono-1@ou.edu</a>
+                                </div>
+                                <button type="button" class="copy-btn" data-copy="john.vianney.ssennono-1@ou.edu" title="Copy Email">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+
+                            <div class="c-info-row">
+                                <div class="c-icon bg-brown-gradient"><i class="fa-solid fa-phone"></i></div>
+                                <div class="c-text">
+                                    <span class="c-label">Phone</span>
+                                    <a href="tel:405-441-8039" class="c-val">405-441-8039</a>
+                                </div>
+                                <button type="button" class="copy-btn" data-copy="405-441-8039" title="Copy Phone Number">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+
+                            <div class="c-info-row">
+                                <div class="c-icon bg-navy-gradient"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="c-text">
+                                    <span class="c-label">Location</span>
+                                    <span class="c-val">University of Oklahoma · Norman, OK</span>
+                                </div>
+                            </div>
+
+                            <div class="social-links-grid">
+                                <a href="https://github.com/John-Vianney-Ssennono" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="mailto:john.vianney.ssennono-1@ou.edu" class="social-btn" aria-label="Direct Email">
+                                    <i class="fa-solid fa-envelope-open-text"></i>
+                                    <span>Direct Email</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Quick Interactive Dispatch Box -->
+                    <div class="contact-form-col">
+                        <div class="contact-form-card apple-glass-card">
+                            <h3 class="form-title">Send a Direct Message</h3>
+                            <p class="form-desc">Fires directly to my university mailbox or pre-populates your email client.</p>
+
+                            <form id="contactForm" class="apple-form">
+                                <div class="form-group">
+                                    <label for="senderName">Your Name</label>
+                                    <input type="text" id="senderName" required placeholder="Dr. Jane Doe / Recruiter Name" class="apple-input">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="senderEmail">Your Email</label>
+                                    <input type="email" id="senderEmail" required placeholder="jane.doe@organization.com" class="apple-input">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="messageSubject">Subject / Topic</label>
+                                    <select id="messageSubject" class="apple-input">
+                                        <option value="Hardware Engineering Opportunity">Hardware / Embedded Engineering Opportunity</option>
+                                        <option value="Research Collaboration on EV Optimization">Research Collaboration (EV / Machine Learning)</option>
+                                        <option value="Summer 2027 Internship">Engineering Internship Discussion</option>
+                                        <option value="General Technical Inquiry">General Question / Networking</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="messageBody">Message</label>
+                                    <textarea id="messageBody" rows="4" required placeholder="Hello John, I came across your EV power optimization review and obstacle-detection hardware..." class="apple-input apple-textarea"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn-pill btn-pill-accent btn-full">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    <span>Open in Email Client</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="brand-monogram monogram-sm">JS</span>
+                <p>
+                    <strong>John Vianney Ssennono</strong> · Electrical Engineering B.S. Candidate (Dec 2027)<br>
+                    <span class="text-dim">University of Oklahoma · Gallogly College of Engineering · Norman, OK</span>
+                </p>
+            </div>
+
+            <div class="footer-right">
+                <p class="footer-copy">
+                    Engineered with pure HTML, Vanilla CSS & JavaScript.<br>
+                    <span class="text-dim">Apple Vision Glass &bull; Navy Blue &amp; Cognac Brown Theme &bull; WCAG High-Contrast</span>
+                </p>
+                <div class="footer-back-to-top">
+                    <a href="#top" class="back-to-top-btn" aria-label="Back to top">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Resume Modal -->
+    <div class="modal-overlay" id="resumeModal" aria-hidden="true">
+        <div class="modal-glass-container" role="dialog" aria-labelledby="resumeModalTitle">
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <i class="fa-solid fa-file-pdf text-brown"></i>
+                    <h3 id="resumeModalTitle">John Vianney Ssennono — Resume (Summary)</h3>
+                </div>
+                <button type="button" id="closeResumeBtn" class="close-modal-btn" aria-label="Close modal">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="resume-sheet">
+                    <div class="r-head">
+                        <h2>John Vianney Ssennono</h2>
+                        <p>john.vianney.ssennono-1@ou.edu | 405-441-8039 | Norman, OK | University of Oklahoma</p>
+                    </div>
+
+                    <div class="r-section">
+                        <h4>EDUCATION</h4>
+                        <div class="r-row">
+                            <strong>Bachelor of Science, Electrical Engineering</strong>
+                            <span>Aug 2024 – Dec 2027</span>
+                        </div>
+                        <div class="r-row text-dim">
+                            <span>University of Oklahoma, Norman, OK</span>
+                            <strong>GPA: 3.7 / 4.0</strong>
+                        </div>
+                        <p class="r-text">
+                            <strong>Relevant Coursework:</strong> Electronics, Circuits Lab, Digital Logic Design, Circuit I & II Analysis, Digital Signals and Filtering, Computer-Aided Design (CAD) - Fusion 360, TinkerCAD.<br>
+                            <strong>Activities:</strong> LLM Engineering Club, IEEE, NSBE, Jerry Holmes Leadership Program, Quantum Society, OU Alpha Lambda Delta National Honors Society, Sooner Rover.
+                        </p>
+                    </div>
+
+                    <div class="r-section">
+                        <h4>PROJECTS</h4>
+                        <p class="r-project-title"><strong>Autonomous Obstacle-Detection Vision Glasses</strong> (May 2026 – Present)</p>
+                        <ul class="r-list">
+                            <li>Designed and prototyped wearable embedded hardware using Arduino Uno, ultrasonic distance sensor, and real-time buzzer feedback.</li>
+                            <li>Wrote and debugged embedded C control logic, validating sub-15ms detection at a 15 cm safe range.</li>
+                            <li>Applied circuit design, power regulation, and sensor-integration verification used in power electronics.</li>
+                        </ul>
+
+                        <p class="r-project-title"><strong>Door Reed Switch and LED Status Indicator System</strong> (Aug – Dec 2024)</p>
+                        <ul class="r-list">
+                            <li>Built and delivered a real-time signaling circuit using magnetic reed switches and color-coded LEDs for Engineering Pathways Offices.</li>
+                            <li>Delivered working prototype within 1 month, improving office availability visibility from 20 feet away.</li>
+                        </ul>
+                    </div>
+
+                    <div class="r-section">
+                        <h4>EXPERIENCE</h4>
+                        <div class="r-row">
+                            <strong>OETT Technology Assistant</strong>
+                            <span>Sept 2026 – Present</span>
+                        </div>
+                        <p class="r-sub">The Oklahoma Educational Technology Trust (OETT) · Norman, OK</p>
+                        <ul class="r-list">
+                            <li>Maintain and operate specialized demonstration equipment: drones, robotics, 3D printers, laser engravers, and video gear.</li>
+                        </ul>
+
+                        <div class="r-row">
+                            <strong>Research Study Assistant</strong>
+                            <span>May 2025 – Present</span>
+                        </div>
+                        <p class="r-sub">Jeannine Rainbolt College of Education, University of Oklahoma</p>
+                        <ul class="r-list">
+                            <li>Deployed data-driven mathematics tutoring framework for 12 secondary students; SAGA Certified across 3 Oklahoma Metro schools.</li>
+                        </ul>
+
+                        <div class="r-row">
+                            <strong>Undergraduate Researcher (First Author)</strong>
+                            <span>June 2025 – Aug 2026</span>
+                        </div>
+                        <p class="r-sub">Frontiers SA - Frontiers in Artificial Intelligence</p>
+                        <ul class="r-list">
+                            <li>First Author of systematic review analyzing Machine Learning in Electric Vehicle power optimization (2015–2025), synthesizing 600+ peer-reviewed studies.</li>
+                        </ul>
+
+                        <div class="r-row">
+                            <strong>IT Service Delivery Specialist</strong>
+                            <span>June 2025 – Sept 2026</span>
+                        </div>
+                        <p class="r-sub">University of Oklahoma IT · Norman, OK</p>
+                        <ul class="r-list">
+                            <li>Maintained uptime across cloud infrastructure supporting 100,000+ accounts on a 39-person operations team; Aruba WiFi and Cisco VoIP.</li>
+                        </ul>
+                    </div>
+
+                    <div class="r-section">
+                        <h4>TECHNICAL SKILLS</h4>
+                        <p class="r-text">
+                            <strong>Programming Tools:</strong> C, Python, MATLAB, LaTeX, Arduino IDE, Arduino Hardware/Software Integration, Fusion 360, TinkerCAD.<br>
+                            <strong>Engineering Fundamentals:</strong> Circuit Analysis, Digital Logic Design, System Prototyping, Sensor Integration, Oscilloscope & Lab Instrumentation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn-pill btn-pill-outline" id="printResumeBtn">
+                    <i class="fa-solid fa-print"></i> Print / Save as PDF
+                </button>
+                <a href="mailto:john.vianney.ssennono-1@ou.edu?subject=Resume%20Inquiry%20-%20John%20Vianney%20Ssennono" class="btn-pill btn-pill-primary">
+                    <i class="fa-solid fa-envelope"></i> Request Official Copy
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification for Copy Actions -->
+    <div id="toast" class="toast-notification" aria-live="polite">Copied to clipboard!</div>
+
+    <!-- Interactive Script -->
+    <script src="script.js"></script>
+</body>
+</html>
