@@ -6,7 +6,7 @@
 
 Welcome to the official portfolio repository for **John Vianney Ssennono**, Electrical Engineering student at the **University of Oklahoma (3.7 GPA)**.
 
-Live website: **[john-vianney-ssennono.github.io]([https://john-vianney-ssennono.github.io/](https://john-vianney-ssennono.github.io/john-vianney_ssennono.github.io/))**
+Live website: **[john-vianney-ssennono.github.io](https://john-vianney-ssennono.github.io/john-vianney_ssennono.github.io/)**
 
 ---
 
